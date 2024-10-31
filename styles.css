@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(251, 240, 218);
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #161515;
+    margin-bottom: 30px;
+}
+h2, p {
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+header h4 {
+    font-size: 1.1em;
+    color: #666;
+}
+/* Navigation */
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #007acc; /* Accent color for links */
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d66f10; /* Darker shade on hover */
+}
+
+.assets a {
+    color: #007acc; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+}
+
+.assets a:hover {
+    color: #d66f10; /* Change color on hover */
+}
+/* General Form Styling */
+form {
+    background: linear-gradient(135deg, #ffd175, #fae0ab);
+    padding: 2em;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section Styling */
+section[role="region"] {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/* Label Styling */
+label {
+    font-size: 1.2em;
+    color: #1b1b1b;
+    display: block;
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Focus Effect for Input Fields */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Div Container for Label and Input */
+.info {
+    position: relative;
+}
+
+/* Placeholder Animation */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder {
+    color: transparent;
+}
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(20, 17, 17);
+    background: linear-gradient(135deg, #ffd175, #fae0ab);
+    padding: 1em 0.5em;
+    border: 2px solid black;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 120px;
+    margin-left: 100px;
+  }
+  
+  button span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: #f59505;
+    border-radius: 50%;
+    transition: .6s ease;
+  }
+  
+  button span:nth-child(6) {
+    position: relative;
+  }
+  
+  button span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+  }
+  
+  button span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+  }
+  
+  button span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+  }
+  
+  button span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+  }
+  
+  button span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+  }
+  
+  button:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+  }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="testing.css" />
+  </head>
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+    <fieldset>
+      <label for="first-name">First Name: <input id="name" name="first-name" type="text" required placeholder="Emma..."></label>
+      <label id="name-label">Last Name: <input id="last-name" name="last-name" type="text" required placeholder="Smith..."></label>
+      <label id="email-label">Email: <input id="email" name="email" type="email" required placeholder="abc123@gmail.com"></label>
+      </fieldset>
+      <fieldset>
+      <legend>How often do you use social media?</legend>
+      <label for="very-often"><input id="very-often" name="usage" type="radio" checked value="very-often"> Very often </label>
+      <label for="often"><input id="often" name="usage" type="radio" value="often"> Often</label>
+      <label for="moderate"><input id="moderate" name="usage" type="radio" value="moderate"> Moderate</label>
+      <label for="not-much"><input id="not-much" name="usage" type="radio" value="not-much"> Not much</label>
+      </fieldset>
+      <fieldset>
+        <legend>Check all of the following social media you use</legend>
+        <label for="instagram"><input id="instagram" name="all" type="checkbox" value="ig">Instagram</label><br>
+        <label for="facebook"><input id="facebook" name="all" value="fb" type="checkbox">Facebook</label><br>
+<label for="Snapchat"><input id="snapchat" value="sc" name="all" type="checkbox">Snapchat</label><br>
+<label for="youtube"><input id="youtube" value="yt" name="all" type="checkbox">YouTube</label><br>
+<label for="tiktok"><input id="tiktok" name="all" type="checkbox" value="tt">TikTok</label><br>
+<label for="whatsapp"><input id="whatsapp" name="all" type="checkbox" value="wa">Whatsapp</label><br> 
+<label for="other"><input id="other" name="other" type="checkbox" value="o">Other <br>
+<textarea id="other" name="other" placeholder="Douyin, Netflix..." rows="3" cols="30"></textarea>
+ </label><br>
+      </fieldset>
+      <fieldset>
+        <Label for="reason">What do you use social media for mostly?</label>
+        <select id="dropdown" name="reason">
+          <option value="">(select any)</option>
+           <option value="1">To connect with the world</option>
+            <option value="2">Learning and education</option>
+              <option value="3">Browsing and surfing</option>
+              </select><br>
+        <label id="number-label">How old are you? <br><input id="number" name="age" type="number" required min="13" max="120" placeholder="24"></label>
+      </fieldset>
+      <input id="submit" type="submit" value="submit">
+      </form>
+      </body>
+      </html>
